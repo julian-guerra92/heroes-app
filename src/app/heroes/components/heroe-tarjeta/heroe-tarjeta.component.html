@@ -12,10 +12,11 @@
             <strong>Personajes:</strong> {{heroe.characters}}
         </p>
     </mat-card-content>
-    <mat-card-actions>
+    <mat-card-actions fxLayout>
         <button mat-raised-button color="warn" [routerLink]="['../', heroe.id]">
             Leer más!
         </button>
+        <span class="spacer"></span>
         <button mat-raised-button color="accent" [routerLink]="['../editar/', heroe.id]">
             Editar
         </button>
